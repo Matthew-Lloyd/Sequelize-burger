@@ -1,1 +1,1 @@
-# Sequelize-burger
+# Sequelizeburger
