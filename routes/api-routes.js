@@ -21,11 +21,9 @@ module.exports = function (app) {
     });
 
     app.put("/api/burgers/:id", function (req, res) {
-        var condition = `id = ${req.params.id}`;
+        console.log(req.body.devoured);
 
-        console.log(`condition: ${condition}`);
-
-        db.burger.update({
+        db.burgers.update({
             devoured: req.body.devoured
         }, {
             where: {
